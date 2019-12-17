@@ -39,7 +39,7 @@ public class Main extends AppCompatActivity {
                 else
                 {
                    SharedPreferences.Editor editor=sharedPreferences.edit();
-                   editor.putString("num","+91"+txt.getText().toString());
+                   editor.putString("num",txt.getText().toString());
                    editor.apply();
                //    Toast.makeText(Main.this,sharedPreferences.getString("num",null),Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(Main.this,Load_Map.class);

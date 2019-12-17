@@ -31,11 +31,12 @@ sharedPreferences=context.getSharedPreferences("number",Context.MODE_PRIVATE);
                 Log.w("MY_DEBUG_TAG", phoneNumber);
 
                 if (Objects.equals(phoneNumber,sharedPreferences.getString("num",null))) {
-                   /* AudioManager audioManager=(AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
+                    AudioManager audioManager=(AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
+Toast.makeText(context,sharedPreferences.getString("num",null),Toast.LENGTH_LONG).show();
 
-
-
-                        audioManager.adjustVolume(AudioManager.ADJUST_RAISE,AudioManager.FLAG_PLAY_SOUND);*/
+                        audioManager.adjustVolume(AudioManager.ADJUST_RAISE,AudioManager.FLAG_PLAY_SOUND);
+                   MediaPlayer m=MediaPlayer.create(context,R.raw.erty);
+                   m.start();
                     AudioManager am =
                             (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 

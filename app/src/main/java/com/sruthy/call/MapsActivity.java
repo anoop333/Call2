@@ -69,7 +69,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             for(int i=0;i<jsonArray.length();i++){
                                 JSONObject json_obj = jsonArray.getJSONObject(i);
                                 latitude = json_obj.getString("latitude");
-
                                     longitude=json_obj.getString("longitude");
 
 

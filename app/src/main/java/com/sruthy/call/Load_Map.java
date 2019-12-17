@@ -128,7 +128,6 @@ ImageView imageView;
                                 idd = json_obj.getString("image");
                                 Picasso.get().load("http://dress-metal.000webhostapp.com/uploads/"+idd).into(imageView);
                                 // Toast.makeText(Load_Map.this,idd,Toast.LENGTH_SHORT).show();
-
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
